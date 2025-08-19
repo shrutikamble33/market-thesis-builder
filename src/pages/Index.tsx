@@ -1,7 +1,10 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { Link, useSearchParams } from "react-router-dom";
 import { StockAnalysisForm } from "@/components/StockAnalysisForm";
 import { InvestmentThesis } from "@/components/InvestmentThesis";
 import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Search } from "lucide-react";
 
 export interface ThesisData {
   company: {
@@ -42,6 +45,17 @@ export interface ThesisData {
 const Index = () => {
   const [analysisData, setAnalysisData] = useState<ThesisData | null>(null);
   const [isAnalyzing, setIsAnalyzing] = useState(false);
+  const [searchParams] = useSearchParams();
+
+  // Auto-analyze if ticker and market are provided via URL params
+  useEffect(() => {
+    const ticker = searchParams.get('ticker');
+    const market = searchParams.get('market');
+    
+    if (ticker && market && !analysisData && !isAnalyzing) {
+      handleAnalysis(ticker, market);
+    }
+  }, [searchParams, analysisData, isAnalyzing]);
 
   const handleAnalysis = async (ticker: string, market: string) => {
     setIsAnalyzing(true);
@@ -103,9 +117,15 @@ const Index = () => {
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             Investment Thesis Portal
           </h1>
-          <p className="text-xl opacity-90 max-w-2xl mx-auto">
+          <p className="text-xl opacity-90 max-w-2xl mx-auto mb-6">
             Professional stock analysis and investment thesis generation for US, UK, and European markets
           </p>
+          <Link to="/research">
+            <Button variant="outline" className="bg-white/10 border-white/20 text-white hover:bg-white/20">
+              <Search className="w-4 h-4 mr-2" />
+              Explore Stock Research
+            </Button>
+          </Link>
         </div>
       </div>
 
