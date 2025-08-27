@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import Research from "./pages/Research";
 import Portfolio from "./pages/Portfolio";
 import NotFound from "./pages/NotFound";
+import Disclaimer from "./components/Disclaimer";
 
 const queryClient = new QueryClient();
 
@@ -16,13 +17,18 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/research" element={<Research />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+        <div className="min-h-screen flex flex-col">
+          <div className="flex-1">
+            <Routes>
+              <Route path="/" element={<Index />} />
+              <Route path="/research" element={<Research />} />
+              <Route path="/portfolio" element={<Portfolio />} />
+              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </div>
+          <Disclaimer />
+        </div>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
