@@ -234,7 +234,7 @@ export const RiskManagement = ({ allocation }: RiskManagementProps) => {
       <Card className="p-6">
         <h3 className="text-xl font-semibold mb-4">Risk Monitoring Schedule</h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div className="p-4 bg-success/10 rounded-lg">
+          <div className="p-4 bg-success-light rounded-lg">
             <h4 className="font-medium text-success mb-2">Daily</h4>
             <ul className="text-sm text-success space-y-1">
               <li>• Portfolio P&L review</li>
@@ -242,7 +242,7 @@ export const RiskManagement = ({ allocation }: RiskManagementProps) => {
               <li>• Stop-loss monitoring</li>
             </ul>
           </div>
-          <div className="p-4 bg-warning/10 rounded-lg">
+          <div className="p-4 bg-warning-light rounded-lg">
             <h4 className="font-medium text-warning mb-2">Weekly</h4>
             <ul className="text-sm text-warning space-y-1">
               <li>• Risk metrics calculation</li>
