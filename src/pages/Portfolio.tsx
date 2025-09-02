@@ -75,7 +75,7 @@ const Portfolio = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <div className="bg-gradient-hero text-primary-foreground py-12">
+      <div className="bg-gradient-to-br from-primary to-accent text-primary-foreground py-12">
         <div className="container mx-auto px-4">
           <div className="flex items-center gap-4 mb-6">
             <Link to="/">
@@ -114,7 +114,7 @@ const Portfolio = () => {
         <div className="max-w-7xl mx-auto space-y-8">
           {/* Strategy Overview */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <Card className="p-6 shadow-card">
+            <Card className="p-6 shadow-lg">
               <h2 className="text-2xl font-bold mb-4 text-foreground">Portfolio Allocation</h2>
               <AllocationVisualizer 
                 allocation={allocation}
@@ -122,7 +122,7 @@ const Portfolio = () => {
               />
             </Card>
 
-            <Card className="p-6 shadow-card">
+            <Card className="p-6 shadow-lg">
               <h2 className="text-2xl font-bold mb-4 text-foreground">Compound Growth Projection</h2>
               <CompoundGrowthChart
                 initialInvestment={initialInvestment}
@@ -134,7 +134,7 @@ const Portfolio = () => {
           </div>
 
           {/* Strategy Builder */}
-          <Card className="p-6 shadow-card">
+          <Card className="p-6 shadow-lg">
             <StrategyBuilder
               allocation={allocation}
               onAllocationChange={setAllocation}
@@ -148,7 +148,7 @@ const Portfolio = () => {
           </Card>
 
           {/* Risk Management */}
-          <Card className="p-6 shadow-card">
+          <Card className="p-6 shadow-lg">
             <RiskManagement allocation={allocation} />
           </Card>
         </div>

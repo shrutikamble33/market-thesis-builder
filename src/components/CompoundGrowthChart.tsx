@@ -79,7 +79,7 @@ export const CompoundGrowthChart = ({
     <div className="space-y-6">
       {/* Growth Metrics */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <div className="text-center p-3 bg-success-light rounded-lg">
+        <div className="text-center p-3 bg-success/10 rounded-lg">
           <p className="text-sm text-muted-foreground">Final Value</p>
           <p className="text-lg font-bold text-success">{finalValue.formattedValue}</p>
         </div>

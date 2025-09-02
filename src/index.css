@@ -59,21 +59,7 @@
 
     --radius: 0.75rem;
 
-    /* Financial gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(215 85% 25%), hsl(215 85% 35%));
-    --gradient-success: linear-gradient(135deg, hsl(142 76% 36%), hsl(142 76% 46%));
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(215 15% 98%));
-    --gradient-hero: linear-gradient(135deg, hsl(215 85% 25%), hsl(195 75% 35%));
 
-    /* Professional shadows */
-    --shadow-card: 0 4px 12px -2px hsl(215 25% 15% / 0.08);
-    --shadow-elevated: 0 8px 24px -4px hsl(215 25% 15% / 0.12);
-    --shadow-primary: 0 4px 16px -2px hsl(215 85% 25% / 0.3);
-
-    /* Transitions */
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-
-    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
