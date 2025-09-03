@@ -22,6 +22,11 @@ const Disclaimer = () => {
             </p>
           </div>
         </div>
+        <div className="border-t border-border/50 mt-6 pt-4 text-center">
+          <p className="text-sm text-muted-foreground">
+            © 2025 Shruti Kamble, MBA, UK. All rights reserved.
+          </p>
+        </div>
       </div>
     </footer>
   );
