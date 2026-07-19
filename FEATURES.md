@@ -120,4 +120,55 @@ A 5-bucket asset allocation framework, each with its own colour, risk level, and
 
 ---
 
+## 6. Epics and Features
+
+Organised in agile-style epics for backlog planning, roadmap communication, or portfolio documentation.
+
+### Epic 1: Investment Thesis Generation
+Deliver an institutional-quality, single-stock research experience.
+- **F1.1 Ticker & Market Intake** — validated ticker input with US / UK / EU market selector.
+- **F1.2 Structured 7-Section Thesis** — Company Overview, Rationale, Catalysts, Risks & Mitigants, Valuation, Horizon, Final Thesis.
+- **F1.3 BUY / HOLD / SELL Recommendation Engine** — colour-coded verdict badge with supporting rationale.
+- **F1.4 Valuation Snapshot** — current price, target price, methodology, upside / downside %.
+- **F1.5 Interactive 12-Month Price Chart** — Recharts line chart with target-price reference line and 52-week stats.
+- **F1.6 Deep-Linkable Thesis URLs** — shareable `/?ticker=XYZ&market=US` links that auto-run the analysis.
+
+### Epic 2: Stock Research & Screening
+Help users discover candidates that match their investment style.
+- **F2.1 Multi-Criteria Filter Panel** — market, sector, market cap, 12M return, P/E, dividend yield.
+- **F2.2 Preset Quick Screens** — Top Performers, Value Stocks, Dividend Champions, Large Cap Growth.
+- **F2.3 Sortable Results Table** — multi-column sort with colour-coded performance indicators.
+- **F2.4 One-Click Analyse Hand-off** — jump from any row into the Thesis Generator with context preserved.
+- **F2.5 Results Export** — download the filtered list for offline review.
+- **F2.6 Empty & Loading States** — friendly UX for zero-match and in-progress screening.
+
+### Epic 3: Portfolio Strategy Builder
+Design and stress-test a diversified portfolio targeting 12–15% CAGR.
+- **F3.1 5-Bucket Allocation Model** — Core Growth, Swing / Algo, Options Income, Alternatives, Real Estate.
+- **F3.2 Interactive Allocation Pie Chart** — hover tooltips, risk-level badges, colour-coded legend.
+- **F3.3 Live Allocation Sliders** — proportional rebalancing keeps total at 100%.
+- **F3.4 Preset Strategies** — Conservative, Balanced, Aggressive one-click profiles.
+- **F3.5 Compound Growth Projection** — 20-year area chart driven by initial + monthly contributions.
+- **F3.6 Scenario Comparison** — side-by-side final values for 12% / 13.5% / 15% CAGR.
+- **F3.7 Target-CAGR Indicator** — real-time badge showing weighted return vs. target.
+
+### Epic 4: Risk Management Framework
+Institutionalise discipline through explicit rules and metrics.
+- **F4.1 Risk Metrics Dashboard** — Risk Score, Volatility, Sharpe Ratio, Max Position.
+- **F4.2 Compliance Checker** — automated pass / warning badges against position, sector, and diversification rules.
+- **F4.3 Execution Rulebook** — Entry, Position Sizing, Exit, and Rebalancing checklists.
+- **F4.4 Monitoring Schedule** — Daily / Weekly / Monthly review cadence.
+
+### Epic 5: Platform, Design System & Compliance
+Cross-cutting foundations that keep the app consistent and safe.
+- **F5.1 Unified Navigation** — hero landing with links across Analysis, Research, and Portfolio.
+- **F5.2 Semantic Design Tokens** — HSL-based tokens for colours, gradients, and shadows.
+- **F5.3 Responsive Layout** — mobile, tablet, and desktop breakpoints.
+- **F5.4 Prototype Disclaimer** — persistent footer stating the app is educational only.
+- **F5.5 Copyright & Attribution** — © 2025 Shruti Kamble, MBA, UK on every page.
+- **F5.6 Loading & Empty State Library** — consistent spinners and messages across features.
+
+---
+
 *Built as a prototype by Shruti Kamble, MBA (UK), 2025.*
+
